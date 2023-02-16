@@ -5,17 +5,75 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    margin: 1vw 2vw;
+}
+
+.notifications {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+    padding: 1vw 4vw;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding: 1vw 2vw;
+    gap: 1vw;
+}
+
+.menu {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1vw 4vw;
+    gap: 1.5vw
+}
+
+.menu button{
+    background-color: rgb(0, 10, 33);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 153, 0, 0.874);;
+}
+
+.menu button:hover {
+    background-color: rgb(15, 75, 95);
+    box-shadow: 0px 1px #87dbff;
+    border-radius: 9px 10px;
+    transition: all 0.1s ease-out;
+    border: 1.2px solid rgb(0, 0, 48);
+}
+
+input[type='search'] {
+    background-color: rgba(190, 190, 190, 0.3);
+    flex-grow: 1;
+    border-radius: 20vw;
+
 }
 
 img {
     border-radius: 50%;
+    border: 2px solid rgba(255, 153, 0, 0.65);
+    
 }
 
 .sidebar {
@@ -35,8 +93,15 @@ img {
 
 .dashboard.link{
     gap:13px ;
-    margin-bottom: 32px;
-    letter-spacing: 1px;
+    margin: 32px 32px 56px 10px;
+    letter-spacing: 2px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: x-large;
 }
 
 .communities.link {
@@ -59,10 +124,10 @@ img {
 .button::before {
     content: '';
     position: absolute;
-    bottom: 12%;
-    left: 0;
-    height: 70%;
-    width: 100%;
+    bottom: 0%;
+    left: 5%;
+    height: 5%;
+    width: 90%;
     z-index: 1;
     opacity: 0;
     transition: all 0.3s;
@@ -73,7 +138,7 @@ img {
     border-top-color: rgba(255,255,255,0.5);
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .button:hover  {
@@ -105,8 +170,98 @@ img {
     float: left;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+
+.main-content {
+    background-color: rgba(197, 218, 255, 0.338);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, minmax(auto, 50%));
+
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px repeat(3, minmax(18vh,21vh));
+    grid-row: 1/-1;
+    padding: 0 1vw;
+    margin: 0 10px;
+    gap:22px;
+}
+
+.projects div{
+    padding:0.4vw;
+}
+
+.projects h4{
+    grid-column: 1/3;
+    margin-top: auto;
+    padding: 0 0.1vw;
+    margin-bottom: 5px;
+}
+
+.content{     
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    border-radius: 5px 30px;
+    border-left: 3px solid rgba(255, 153, 0, 0.7);
+    background-color: rgba(180, 217, 240, 0.3);    
+    display: grid;
+    margin-right: 20px;
+}
+
+.content>h4 {
+    grid-row: 1;
+}
+
+.content>div {
+    grid-row: 2;
+}
+
+.content>span {
+    display: flex;
+    grid-row: 5;
+    margin: 0 10px 10px auto;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    grid-template-rows: 10px auto;
+    padding: 30px;
+    align-items:  baseline;
+    overflow: auto;
+}
+
+.announcements h5{
+    margin-left: 0.4vw;
+    margin-bottom: -12px;
+    font-size: 1vw;
+}
+
+.announcements div{
+    padding: 1vw 0.5vw;
+    font-size: 0.8vw;
+    min-height: 0;
+    flex: 1 0 0;
+    min-width: 100%;
+}
+
+#border {
+    justify-self: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    width: 60%;
+}
+
+.trending {
+    grid-column: 2;
+    margin-bottom: 20px;
+
+}
+
+.container {
+    border-radius: 10px ;
+    background-color: rgba(180, 217, 240, 0.083);   
+    border-top: 3px solid rgba(255, 153, 0, 0.5);
+    border-bottom: 3px solid rgba(255, 153, 0, 0.5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
