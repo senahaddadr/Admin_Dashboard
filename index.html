@@ -8,18 +8,22 @@
 </head>
 <body>
     <div class="header">
-        <label for="search" class="material-symbols-outlined">
+        <div class="search">        
+            <label for="search" class="material-symbols-outlined">
             search
-        </label>
-        <input type="search" id="search">
-        <span class="material-symbols-outlined">
-            notifications_active
-        </span>
-        <img src="DSC_0834.JPG" alt="profile" height="50px" width="50px">
-        <span>Sena Haddad</span>
-        <div class="profile">        
+            </label>
+            <input type="search" id="search">
+        </div>
+        <div class="notifications">
+            <span class="material-symbols-outlined">
+                notifications_active
+            </span>
+            <img src="DSC_0834.JPG" alt="profile" height="50px" width="50px">
+            <span>Sena Haddad</span>
+        </div>
+        <div class="name">        
             <img src="DSC_0834.JPG" alt="profile" height="75px" width="75px">
-            <div>Hi there, </br>Sena Haddad (@senahaddadr)</div>
+            <div>Hi there, </br><strong>Sena Haddad (@senahaddadr)</strong></div>
         </div>
         <div class="menu">
             <button>New</button>
@@ -93,8 +97,8 @@
         <div class="projects">
             <h4>Your Projects</h4>
             <div class="content">
-                <h4>Super Cool Project</h4>
-                <div>Sed tempus ut lacus ut scelerisque.
+                <h4 class="title">Super Cool Project</h4>
+                <div class="text">Sed tempus ut lacus ut scelerisque.
                     Suspendisse sollicitudin nibh erat, id
                     facilisis felis accumsan nec.
                 </div>
@@ -103,8 +107,8 @@
                 </span>
             </div>
             <div class="content">
-                <h4>Super Cool Project</h4>
-                <div>Sed tempus ut lacus ut scelerisque.
+                <h4 class="title">Less Cool Project</h4>
+                <div class="text">Sed tempus ut lacus ut scelerisque.
                     Suspendisse sollicitudin nibh erat, id
                     facilisis felis accumsan nec.
                 </div>
@@ -113,11 +117,10 @@
                 </span>
             </div>
             <div class="content">
-                <h4>Less Cool Project</h4>
-                <div>Nullam condimentum ipsum ut lectus vehicula
+                <h4 class="title">Easy Peasy App</h4>
+                <div class="text">Nullam condimentum ipsum ut lectus vehicula
                     consectetur. Quisque sed dolor tincidunt,
-                    consectetur sapien et, facilisis dolor. Duis sem
-                    purus, dignissim ut sapien in, varius
+                    consectetur sapien in, varius
                     pellentesque lacus.
                 </div>
                 <span class="material-symbols-outlined">
@@ -125,8 +128,8 @@
                 </span>
             </div>
             <div class="content">
-                <h4>Impossible App</h4>
-                <div>In hac habitasse platea dictumst. Vivamus
+                <h4 class="title">Impossible App</h4>
+                <div class="text">In hac habitasse platea dictumst. Vivamus
                     dictum rutrum arcu, a placerat velit sagittis
                     id.
                 </div>
@@ -134,9 +137,9 @@
                     share
                 </span>
             </div>
-            <div class="Easy Peasy App">
-                <h4>Ad Blocker</h4>
-                <div>Quisque eget rutrum isl. Nam auque
+            <div class="content">
+                <h4 class="title">Ad Blocker</h4>
+                <div class="text">Quisque eget rutrum isl. Nam auque
                     justo, cursus vitae metus vel, pharetra
                     hendrerit felis. Aliquam sed malesuada
                     eros.
@@ -146,8 +149,8 @@
                 </span>
             </div>
             <div class="content">
-                <h4>Money Maker</h4>
-                <div>Present convallis, libero quis congue
+                <h4 class="title">Money Maker</h4>
+                <div class="text">Present convallis, libero quis congue
                     elementum, nunc ante faucibus sapien, ac
                     scelerisque tortor purus sit amet ex.
                     Pellentesque mollis nec sem vel aliquam
@@ -157,56 +160,43 @@
                 </span>
             </div>
         </div>
-        <div class = "announcements">
-            <h4>Announcements</h4>
-            <div class="content">
-                <h4>Site Maintenance</h4>
-                <div>Vestibulum condimentum tells lacus,
-                    in accumsan elit maximus ac. Donec
-                    hendrerit sodales congue...
-                </div>
-                <span class="material-symbols-outlined">
-                    share
-                </span>
+        <div class="right">
+            <div class = "announcements">
+                <h4>Announcements</h4>
+                    <div class="container">
+                        <h5>Site Maintenance</h5>
+                        <div>Vestibulum condimentum tells lacus,
+                            in accumsan elit maximus ac. Donec
+                            hendrerit sodales congue...
+                        </div>
+                        <h5>Community Share Day</h5>
+                        <div>Nam vel lectus tincidunt, rutrum nulla
+                            eu, ornare libero. Aliquam dictum
+                            accumsan porttitor...
+                        </div>
+                        <h5>Updated Privacy Policy</h5>
+                        <div>Phasellus efficitur nisi get elit
+                            consectetur, eget condimentum ante
+                            auctor. Cras fringilla sagittis sem in
+                            mattis... 
+                        </div>
+        
+                    </div>
             </div>
-            <div class="content">
-                <h4>Community Share Day</h4>
-                <div>Nam vel lectus tincidunt, rutrum nulla
-                    eu, ornare libero. Aliquam dictum
-                    accumsan porttitor...
+            <div class = "announcements trending">
+                <h4>Trending</h4>
+                <div class="container">
+                        <h5>1.</h5>
+                        <div>Bluh</div>
+                        <h5>2.</h5>
+                        <div>Bluh</div>
+                        <h5>3.</h5>
+                        <div>Bluh</div>
+                        <h5>4.</h5>
+                        <div>Bluh...</div>
                 </div>
-                <span class="material-symbols-outlined">
-                    share
-                </span>
-            </div>
-            <div class="content">
-                <h4>Updated Privacy Policy</h4>
-                <div>Phasellus efficitur nisi get elit
-                    consectetur, eget condimentum ante
-                    auctor. Cras fringilla sagittis sem in
-                    mattis...
-                </div>
-                <span class="material-symbols-outlined">
-                    share
-                </span>
             </div>
         </div>
-        <div class = "trending">
-            <h4>Trending</h4>
-            <div class="content">
-                <div>Bluh</div>
-            </div>
-            <div class="content">
-                <div>Bluh</div>
-            </div>
-            <div class="content">
-                <div>Bluh...</div>
-            </div>
-        </div>
-
-
-
-
     </div>
 </body>
 </html>
